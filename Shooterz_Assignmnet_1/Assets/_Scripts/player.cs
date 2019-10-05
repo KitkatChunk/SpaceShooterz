@@ -18,18 +18,16 @@ public class player : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Getting user input and controlling the player into direction x speed.
     void Update()
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxis("Vertical"));
         moveVelocity = moveInput.normalized * speed;
-    }
-
-
-     void FixedUpdate()
-    {
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+
     }
 
+    // Detecting collisions between the player and other objects and substracting the amount of hearts that each enemy/obsticle hurt the player.
     void OnTriggerEnter2D(Collider2D other)
     {
         switch (other.gameObject.tag)

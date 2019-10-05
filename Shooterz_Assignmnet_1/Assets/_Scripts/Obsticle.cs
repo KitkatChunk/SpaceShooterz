@@ -19,9 +19,9 @@ public class Obsticle : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// This method moves the ocean down the screen by verticalSpeed
-    /// </summary>
+    
+    // Moving the background using certain horizontal speed (from left to right)
+   
     void Move()
     {
         Vector2 newPosition = new Vector2(horizontalSpeed, 0.0f);
@@ -31,9 +31,7 @@ public class Obsticle : MonoBehaviour
         transform.position = currentPosition;
     }
 
-    /// <summary>
-    /// This method resets the ocean to the resetPosition
-    /// </summary>
+   // This method resets the background to start position
     void Reset()
     {
         float randomYPosition = Random.RandomRange(1.2f, -1.2f);

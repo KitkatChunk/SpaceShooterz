@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
+
     public float horizontalSpeed = 0.5f;
     public float resetPosition = 4.8f;
     public float resetPoint = -5f;
@@ -31,9 +32,8 @@ public class BackgroundController : MonoBehaviour
         transform.position = currentPosition;
     }
 
-    /// <summary>
-    /// This method resets the ocean to the resetPosition
-    /// </summary>
+    
+    // This method resets the background to the resetPosition
     void Reset()
     {
         transform.position = new Vector2(resetPosition, 0f );

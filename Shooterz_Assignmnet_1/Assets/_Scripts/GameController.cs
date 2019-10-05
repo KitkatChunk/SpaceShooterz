@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 {
     public GameController gameController;
 
+    // UI headers for score and hearts private and serialized.
     [Header("Scoreboard")]
     [SerializeField]
     private int _hearts;
@@ -18,7 +19,7 @@ public class GameController : MonoBehaviour
 
     public Text HeartsLabel;
     public Text ScoreLabel;
-
+    // Setting hearts to the amount of hearts as an int, when the hearts reaches 0 GameOver scene is played.
     public int Hearts
     {
         get
@@ -43,7 +44,7 @@ public class GameController : MonoBehaviour
 
 
     }
-
+    // Score counter and updater 
     public int Score
     {
         get
