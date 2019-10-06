@@ -2,7 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+/// <summary>
+/// Abdulkarem Alani #300993768
+/// This is a player controller responsible for getting user input to move the player at certain speed, moving the player in the direction the user wants to move it, 
+/// and register collision with other objects and deducts heart accordingly or increase scoring points.
+/// Assets were used from opengameart.
+/// SpaceShip UFO : https://opengameart.org/content/enemy-game-character-ufo-spaceship
+/// Track Sound : https://opengameart.org/content/space-walk
+/// Background / Player : https://opengameart.org/content/dirt-platformer-tiles
+/// </summary>
+
+public class Player : MonoBehaviour
 {
     public float speed;
 

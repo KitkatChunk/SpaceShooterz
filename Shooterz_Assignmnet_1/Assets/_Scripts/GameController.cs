@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Abdulkarem Alani #300993768
+/// This is a Game Controller Takes care of UI (Score and Hearts), Scoring (Update score and heart), and Scene managment (Game over scene is played when hearts reaches 0).
+/// Assets were used from opengameart.
+/// SpaceShip UFO : https://opengameart.org/content/enemy-game-character-ufo-spaceship
+/// Track Sound : https://opengameart.org/content/space-walk
+/// Background / Player : https://opengameart.org/content/dirt-platformer-tiles
+/// </summary>
 
 public class GameController : MonoBehaviour
 {

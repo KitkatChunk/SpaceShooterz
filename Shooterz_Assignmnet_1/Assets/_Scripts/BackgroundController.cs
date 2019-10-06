@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Abdulkarem Alani #300993768
+/// This is a background controller that moves and resets the background from right to left. 
+/// Assets were used from opengameart.
+/// SpaceShip UFO : https://opengameart.org/content/enemy-game-character-ufo-spaceship
+/// Track Sound : https://opengameart.org/content/space-walk
+/// Background / Player : https://opengameart.org/content/dirt-platformer-tiles
+/// </summary>
+
 public class BackgroundController : MonoBehaviour
 {
 
